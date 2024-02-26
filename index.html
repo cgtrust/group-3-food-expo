@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&display=swap" rel="stylesheet">
@@ -16,6 +16,144 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-     
+    <header>
+        <div class="top-nav">
+            <h1>
+                <picture>
+                    <source srcset="images/logo.png" 
+                    media="(min-width: 330px)">
+                    <img class="logo-img" src="images/small-logo.jpg"
+                    alt="This is our logo">
+                </picture>
+            </h1>
+
+            <img src="images/menu.png" alt="hamburger-menu">
+    
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+
+        <div class="bottom-nav">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <div class="search-bar">
+                <input type="text" id="search-bar" placeholder="Search">
+                <button><img src="images/search.png" alt="This is an image of a magnifying glass"></button>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="main-fig-wrapper">
+            <figure>
+                <picture>
+                    <source srcset="images/mussel.jpg"
+                            media="(min-width: 670px)">
+                    <img src="images/mussel-small.jpg" alt="A bowl of mussels">
+                </picture>
+                <figcaption>Lorem ipsum dolor sit</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salad.jpg" alt="A salad with green beans, potatoes, and leafy greens.">
+                <figcaption>Lorem, ipsum dolor</figcaption>
+            </figure>
+            <figure>
+                <img src="images/pancake.jpg" alt="A stack of pancakes.">
+                <figcaption>Sit amet consectetur</figcaption>
+            </figure>
+        </div>
+
+        <aside class="sidebar">
+            <div class="latest-recipes">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Latest Recipes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="images/lamb-tb.jpg" alt="Lamb"></td>
+                            <td>Met consec tetur elit</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/breakfast-tb.jpg" alt="Breakfast image"></td>
+                            <td>Archi tecto dolores</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/calamari-tb.jpg" alt="Calamari"></td>
+                            <td>Mexpe dita ciatis</td>
+                        </tr>
+                        <tr>
+                            <td><img src="images/steak-tb.jpg" alt="Steak"></td>
+                            <td>Fugiat eaque aore</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="cuisines">
+                <h2>Cuisines</h2>
+                <ul>
+                    <li>American (95)</li>
+                    <li>Asian (33)</li>
+                    <li>Cambodian (3)</li>
+                    <li>Chinese (281)</li>
+                    <li>Filipino (8)</li>
+                    <li>French (40)</li>
+                    <li>German (7)</li>
+                    <li>Greek (29)</li>
+                    <li>Indian (44)</li>
+                    <li>Italian (60)</li>
+                    <li>Jamaican (7)</li>
+                    <li>Japanese (202)</li>
+                    <li>Korean (120)</li>
+                    <li>Malaysian (12)</li>
+                    <li>Mediterranean (9)</li>
+                    <li>Mexican (25)</li>
+                    <li>Southern (14s)</li>
+                </ul>
+            </div>
+        </aside>
+
+        <div class="pasta-wrapper">
+            <h2>Lorem, ipsum dolor sit amet</h2>
+            <p>Posted by Mike Lee on Sunday, August 25th, 2013</p>
+            <img src="images/pasta.jpg" alt="A bowl of spaghetti.">
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe inventore, quasi maiores corporis rem cumque temporibus doloribus facilis ipsum recusandae asperiores provident doloremque, pariatur odit, voluptas magnam ipsa suscipit exercitationem.
+            </p>
+            <a href="#">Read more...</a>
+        </div>
+
+        <div class="ramen-wrapper">
+            <h2>Vel, eaque quisquam sit amet</h2>
+            <img src="images/ramen.jpg" alt="A bowl of ramen.">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus vitae expedita est laboriosam perspiciatis nobis unde deleniti aliquam consequuntur cum eaque enim illo, exercitationem, quisquam repellendus totam tenetur impedit iusto?
+            </p>
+            <a href="#">Read more...</a>
+        </div>
+        
+        <div class="older-posts-img">
+            <img src="images/previous-btn.png" alt="This is the older posts button">
+        </div>
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2013 Site designed by Michael Lee. For educational purpose only. Image Credits</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
