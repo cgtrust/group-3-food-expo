@@ -1,10 +1,63 @@
-#socials, .bottom-nav {
-    display: none;
+@use 'vars' as *;
+
+header {
+    background-color: white;
+    border-bottom: 1px solid $navbg;
 }
 
 .top-nav {
     display: flex;
     justify-content: space-between;
+    padding: 0 0.75rem;
+}
+
+.bottom-nav {
+    //hidden in mobile
+    // display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #socials {
+        order: 3;
+        margin: 0.25rem 0;
+        i {
+            color: $navbg;
+        }
+    }
+
+    #menu-items {
+        order: 2;
+        width: 100%;
+
+        ul {
+            list-style: none;
+            text-align: center;
+            padding-left: 0;
+            border-bottom: 1px solid #022b44;
+            margin: 0;
+            li {
+                border-top: 1px solid #022b44;
+                a {
+                    display: block;
+                    padding: 10px;
+                    text-decoration: none;
+                    color: white;
+                    background-color: $navbg;
+                }
+            }
+        }
+    }
+}
+    .search-bar {
+        order: 1;
+        position: relative;
+        width: 100%;
+
+    #search-button {
+        border: none;
+        background: none;
+    }
 }
 
 #hamburger-icon {
