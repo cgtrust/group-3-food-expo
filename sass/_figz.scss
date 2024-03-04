@@ -1,6 +1,14 @@
 .image-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 
