@@ -377,4 +377,21 @@ nav {
   font-weight: 400;
 }
 
+#socials, .bottom-nav {
+  display: none;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#hamburger-icon {
+  align-self: center;
+}
+
+body {
+  background-image: url("../images/bg.jpg");
+}
+
 /*# sourceMappingURL=styles.css.map */
