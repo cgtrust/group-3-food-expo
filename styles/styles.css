@@ -377,4 +377,65 @@ nav {
   font-weight: 400;
 }
 
+.sidebar {
+  width: 95%;
+  margin: 0 auto;
+}
+.sidebar h2 {
+  background-color: #1a71a9;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0.25rem;
+  font-weight: 400;
+}
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 20rem;
+}
+@media (min-width: 48em) {
+  .sidebar ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 34rem;
+  }
+}
+.sidebar li {
+  list-style: none;
+  padding: 0.25rem;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  align-items: center;
+  text-transform: uppercase;
+}
+table thead {
+  background-color: #1a71a9;
+  color: #ffffff;
+  text-align: left;
+}
+table thead th h2 {
+  margin: 0;
+}
+table td img {
+  border: 1px solid #1a71a9;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+table td {
+  width: 5.125rem;
+}
+table td + td {
+  width: auto;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #dfdfdf;
+}
+
 /*# sourceMappingURL=styles.css.map */

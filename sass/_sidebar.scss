@@ -1,0 +1,60 @@
+@use 'vars' as *;
+
+.sidebar {
+    width: 95%;
+    margin: 0 auto;
+    h2 {
+        background-color: $navcolor;
+        color: $tablebglight;
+        text-transform: uppercase;
+        padding: .25rem;
+        font-weight: 400;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 20rem;
+        @media (min-width: 48em) {
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 34rem;
+        }
+    }
+    li {
+        list-style: none;
+        padding: .25rem;
+    }
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    align-items: center;
+    text-transform: uppercase;
+    thead {
+        background-color: $navcolor;
+        color: $tablebglight;
+        text-align: left;
+        th h2 {
+            margin: 0;
+        }
+    }
+    td img {
+        border: 1px solid $navcolor;
+        margin-top: .5rem;
+        margin-left: .5rem;
+        margin-bottom: .25rem;
+    }
+    td {
+        width: 5.125rem;
+    }
+    td+td {
+        width: auto;
+    }
+}
+
+tbody tr:nth-child(even) {
+    background-color: $tablebgdark;
+}
