@@ -1,6 +1,14 @@
-const hamMenu = document.getElementById('hamburger-icon');
+const btnNav = document.querySelector('.nav-button');
+const menu = document.querySelector('.bottom-nav');
 
-hamMenu.addEventListener('click', function(){
-    console.log('clicked!')
-    
-})
+function openNav() {
+    if (menu.classList.contains("showMenu")) {
+        menu.classList.remove("showMenu");
+        menu.style.display = "none";
+      } else {
+        menu.classList.add("showMenu");
+        menu.style.display = "flex";
+      }
+}
+
+btnNav.addEventListener('click', openNav);
