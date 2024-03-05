@@ -1,0 +1,10 @@
+@use 'vars' as *;
+
+main a{
+
+    color: white;
+    background-color: $navbg;
+    padding: .5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}

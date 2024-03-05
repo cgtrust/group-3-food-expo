@@ -377,4 +377,12 @@ nav {
   font-weight: 400;
 }
 
+main a {
+  color: white;
+  background-color: #005991;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=styles.css.map */
