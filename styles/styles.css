@@ -377,6 +377,30 @@ nav {
   font-weight: 400;
 }
 
+.content-wrapper {
+  margin: 0 0.5rem;
+}
+@media (min-width: 50em) {
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+    max-width: 65rem;
+  }
+  .content-wrapper .main-fig-wrapper, .content-wrapper .pasta-wrapper, .content-wrapper .ramen-wrapper {
+    grid-column: 1/6;
+  }
+  .content-wrapper .older-posts-img {
+    grid-column: 1/2;
+  }
+}
+@media (min-width: 65.5em) {
+  .content-wrapper {
+    margin: 0 auto;
+  }
+}
+
 .sidebar {
   width: 95%;
   margin: 0 auto;
@@ -401,9 +425,19 @@ nav {
     max-width: 34rem;
   }
 }
+@media (min-width: 50em) {
+  .sidebar ul {
+    display: inline-block;
+  }
+}
 .sidebar li {
   list-style: none;
   padding: 0.25rem;
+}
+@media (min-width: 50em) {
+  .sidebar {
+    width: 12.5rem;
+  }
 }
 
 table {

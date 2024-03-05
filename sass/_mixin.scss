@@ -1,0 +1,8 @@
+// Grid layout for entire page
+
+@mixin page-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: .5rem;
+}
