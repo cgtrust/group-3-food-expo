@@ -1,5 +1,24 @@
 @use 'vars' as *;
 
+.food-wrapper {
+    
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+    background-color: lightblue;
+}
+
+.food-wrapper h2 {
+    color: #1A71A9;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.post-info {
+    margin-top: 0;
+    font-size: .7rem;
+}
+
 main a{
 
     color: white;
