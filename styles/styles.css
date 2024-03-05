@@ -391,8 +391,9 @@ header {
   display: none;
   flex-direction: column;
   align-items: center;
-  max-height: 0;
-  transition: max-height 1s ease;
+  height: 0;
+  transition: height 0.3s ease;
+  overflow: hidden;
 }
 .bottom-nav #socials {
   display: flex;
@@ -479,7 +480,7 @@ header {
 }
 
 .showMenu {
-  max-height: 100%;
+  height: 266px;
 }
 
 .nav-button {

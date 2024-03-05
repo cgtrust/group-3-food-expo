@@ -14,8 +14,9 @@ header {
     display: none;
     flex-direction: column;
     align-items: center;
-    max-height: 0;
-    transition: max-height 1s ease;
+    height: 0;
+    transition: height 0.3s ease;
+    overflow: hidden;
 
     #socials {
         display: flex;
@@ -87,6 +88,7 @@ header {
             }
         }
     }
+
     .search-bar {
         order: 1;
         position: relative;
@@ -110,11 +112,12 @@ header {
         display: flex;
         align-items: center;
     }
-}
+    }
 }
 
 .showMenu {
-    max-height: 100%;
+   height: 266px;
+//    transition: height 1s ease;
 }
 
 .nav-button {
