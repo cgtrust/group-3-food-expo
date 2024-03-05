@@ -378,6 +378,7 @@ nav {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 header {
   background-color: white;
   border-bottom: 1px solid #005991;
@@ -512,5 +513,44 @@ tbody tr:nth-child(even) {
   background-color: #dfdfdf;
 }
 >>>>>>> sidebar
+=======
+.image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  padding: 4px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .image-container {
+    flex-direction: row;
+  }
+  img {
+    width: 50%; /* Adjust as needed */
+  }
+  figcaption {
+    width: 50%; /* Adjust as needed */
+    margin-top: 0;
+  }
+}
+>>>>>>> Figz
 
 /*# sourceMappingURL=styles.css.map */
