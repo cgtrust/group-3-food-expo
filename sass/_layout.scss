@@ -1,0 +1,19 @@
+@use 'vars' as*;
+@use 'mixin' as*;
+
+.content-wrapper {
+    margin: 0 .5rem;
+    @media (min-width: 50em) {
+        @include page-grid;
+        max-width: 65rem;
+        .main-fig-wrapper, .pasta-wrapper, .ramen-wrapper {
+            grid-column: 1/6;
+        }
+        .older-posts-img {
+            grid-column: 1/2;
+        }
+    }
+    @media (min-width: 65.5em) {
+        margin: 0 auto;
+    }
+}
