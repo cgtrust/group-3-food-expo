@@ -1,0 +1,28 @@
+@use 'vars' as*;
+
+.food-wrapper {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+
+.food-wrapper h2 {
+    color: #1A71A9;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.post-info {
+    margin-top: 0;
+    font-size: 0.7rem;
+}
+
+.food-wrapper a {
+    color: white;
+    background-color: #005991;
+    margin-right: 0.5rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    float: right;
+}
