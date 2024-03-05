@@ -380,8 +380,7 @@ nav {
 .food-wrapper {
   width: 95%;
   margin: 0 auto;
-  padding-bottom: 2rem;
-  background-color: lightblue;
+  padding-bottom: 4rem;
 }
 
 .food-wrapper h2 {
@@ -395,12 +394,14 @@ nav {
   font-size: 0.7rem;
 }
 
-main a {
+.food-wrapper a {
   color: white;
   background-color: #005991;
+  margin-right: 0.5rem;
   padding: 0.5rem;
   text-transform: uppercase;
   text-decoration: none;
+  float: right;
 }
 
 /*# sourceMappingURL=styles.css.map */

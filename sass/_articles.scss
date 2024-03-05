@@ -1,11 +1,9 @@
 @use 'vars' as *;
 
 .food-wrapper {
-    
     width: 95%;
     margin: 0 auto;
-    padding-bottom: 2rem;
-    background-color: lightblue;
+    padding-bottom: 4rem;
 }
 
 .food-wrapper h2 {
@@ -19,11 +17,13 @@
     font-size: .7rem;
 }
 
-main a{
+.food-wrapper a{
 
     color: white;
     background-color: $navbg;
+    margin-right: .5rem;
     padding: .5rem;
     text-transform: uppercase;
     text-decoration: none;
+    float: right;
 }
