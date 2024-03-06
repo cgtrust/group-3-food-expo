@@ -1,8 +1,11 @@
 @use 'vars' as *;
 
+.sidebar, .cuisines {
+    margin: .5rem auto 0 auto;
+}
+
 .sidebar {
     width: 95%;
-    margin: 0 auto;
     h2 {
         background-color: $navcolor;
         color: $tablebglight;
