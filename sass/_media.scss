@@ -1,4 +1,4 @@
-// @use 'vars' as *;
+@use 'vars' as *;
 @use 'mixin' as *;
 
 @include mediaQuery(31.25rem) {
@@ -16,7 +16,7 @@
         #menu-items {
             background-color: #014e85;
             ul {
-                background-color: #005991;
+                background-color: $navbg;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
