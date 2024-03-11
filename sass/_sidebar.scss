@@ -5,7 +5,7 @@
 }
 
 .cuisines {
-    background-color: $tablebglight;
+    background-color: #f9f9f9;
 }
 
 .sidebar {
@@ -18,7 +18,7 @@
         font-weight: 400;
     }
     ul {
-        padding: 0;
+        padding: .5rem;
         margin: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -55,7 +55,10 @@ table {
         }
     }
     td img {
-        border: 1px solid $navcolor;
+        border-top: 2px solid $navcolor;
+        border-bottom: 1px solid $navcolor;
+        border-left: 2px solid $navcolor;
+        border-right: 1px solid $navcolor;
         margin-top: .5rem;
         margin-left: .5rem;
         margin-bottom: .25rem;
@@ -70,4 +73,8 @@ table {
 
 tbody tr:nth-child(even) {
     background-color: $tablebgdark;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: $tablebglight;
 }
