@@ -1,5 +1,6 @@
 @use 'vars' as *;
-@use 'mixin' as *;
+// @use 'mixin' as *;
+@use 'media' as *;
 
 header {
     background-color: white;
@@ -9,6 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0.5rem;
+    align-items: center;
 }
 
 .bottom-nav {
@@ -136,48 +138,4 @@ header {
     &:hover {
         color: $navcolor;
     }
-}
-
-@include mediaQuery(31.25rem) {
-    .top-nav {
-        padding: 1rem;
-        .nav-button {
-            display: none;
-        }
-    }
-    
-    .bottom-nav {
-        display: block;
-        height: unset;
-
-        #menu-items {
-            background-color: #014e85;
-            ul {
-                background-color: #005991;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                margin: 0 1rem;
-            }
-        }
-
-        #socials {
-            display: none;
-        }
-
-        .search-bar {
-            position: absolute;
-            top: 1.125rem;
-            right: 0;
-            max-width: 23%;;
-            margin-right: 1rem;
-            border-radius: 5px;
-            border: unset;
-            box-shadow: inset 0px 0px 15px 0px #939393;
-        }
-    }
-}
-
-@include mediaQuery(43.75rem) {
-    
 }
