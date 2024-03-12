@@ -775,5 +775,20 @@ footer p {
     right: 10rem;
   }
 }
+@media screen and (min-width: 48.4375rem) {
+  .bottom-nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .bottom-nav .search-bar {
+    position: unset;
+    top: unset;
+    right: unset;
+    order: 3;
+    height: 39.39px;
+    margin-right: 0;
+    border-radius: 0;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

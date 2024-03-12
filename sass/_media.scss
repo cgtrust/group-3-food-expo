@@ -66,3 +66,19 @@
         }
     }
 }
+
+@include mediaQuery(48.4375rem) {
+    .bottom-nav {
+        display: flex;
+        flex-direction: row;
+        .search-bar {
+            position: unset;
+            top: unset;
+            right: unset;
+            order: 3;
+            height: 39.39px;
+            margin-right: 0;
+            border-radius: 0;
+        }
+    }
+}
