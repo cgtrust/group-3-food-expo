@@ -16,14 +16,16 @@ btnNav.addEventListener('click', openNav);
 const socials = document.getElementById('socials');
 const topNav = document.querySelector('.top-nav');
 const bottomNav = document.querySelector('.bottom-nav');
+const search = document.querySelector('.search-bar');
+const menuParent = document.getElementById('menu-items');
 
-// function moveSearch() {
-//   if(window.innerWidth >= 500) {
-//     topNav.appendChild(search);
-//   } else if (window.innerWidth < 500) {
-//     bottomNav.appendChild(search);
-//   }
-// }
+function moveSearch() {
+  if (window.innerWidth < 500) {
+    bottomNav.appendChild(search);
+  } else if (window.innerWidth >= 500) {
+    menuParent.appendChild(search);
+  }
+}
 
 function moveSocials() {
   if(window.innerWidth >= 500) {
@@ -33,7 +35,8 @@ function moveSocials() {
   }
 }
 
-window.addEventListener('resize', moveSocials,);
+window.addEventListener('resize', moveSocials);
+window.addEventListener('resize', moveSearch);
 
 moveSocials();
-// moveSearch();
+moveSearch();
