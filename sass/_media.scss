@@ -70,6 +70,11 @@
 }
 
 @include mediaQuery(48.4375rem) {
+    .top-nav {
+        max-width: 1040px;
+        margin: 0 auto;
+    }
+    
     .bottom-nav {
         display: flex;
         padding: 0 1rem;
