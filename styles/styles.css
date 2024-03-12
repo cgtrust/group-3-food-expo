@@ -405,7 +405,7 @@ header {
   line-height: 30px;
   text-align: center;
   position: absolute;
-  color: #005991;
+  color: #18659e;
   width: 100%;
   height: 100%;
   top: 0;
@@ -449,7 +449,7 @@ header {
   padding: 10px;
   text-decoration: none;
   color: white;
-  background-color: #005991;
+  background-color: #18659e;
   transition: all 0.25s ease-in;
 }
 .bottom-nav #menu-items ul li :hover {
@@ -496,7 +496,7 @@ header {
   background: unset;
   cursor: pointer;
   font-size: 2rem;
-  color: #005991;
+  color: #18659e;
 }
 .nav-button:hover {
   color: #1a71a9;
@@ -710,7 +710,7 @@ tbody tr:nth-child(odd) {
 }
 
 footer {
-  background-color: #005991;
+  background-color: #18659e;
   color: white;
   text-align: center;
   padding: 0.5rem 1rem;
@@ -735,15 +735,17 @@ footer p {
     background-color: #014e85;
   }
   .bottom-nav #menu-items ul {
-    background-color: #005991;
+    background-color: #18659e;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin: 0 1rem;
     border-bottom: 0;
+    flex: 1 1;
   }
   .bottom-nav #menu-items ul li {
     border-top: none;
+    flex: 1 1;
   }
   .bottom-nav #menu-items ul li a {
     padding: 1rem;
@@ -779,6 +781,7 @@ footer p {
 }
 @media screen and (min-width: 48.4375rem) {
   .bottom-nav {
+    display: flex;
     padding: 0 1rem;
     background-color: #014e85;
   }
@@ -786,6 +789,7 @@ footer p {
     background-color: unset;
     display: flex;
     justify-content: center;
+    max-width: 1040px;
   }
   .bottom-nav #menu-items ul {
     margin: 0;
