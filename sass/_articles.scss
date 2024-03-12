@@ -1,5 +1,5 @@
 @use 'vars' as*;
-@use 'layout' as *;
+
 
 .food-wrapper {
     width: 95%;
@@ -9,10 +9,11 @@
 }
 
 .food-wrapper h2 {
+    font-family: 'Roboto Condensed Regular';
     color: #1A71A9;
     text-transform: uppercase;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 23px;
     margin-bottom: 0;
     margin: auto 1rem;
 }
@@ -24,9 +25,11 @@
 }
 
 .food-wrapper p{
+    font-family: 'Roboto Light';
     font-weight: 400;
     margin-left: 1rem;
     margin-right: 1rem;
+    font-size: 14px;
 }
 
 .post-info {
@@ -39,7 +42,7 @@
     font-weight: bold;
     color: white;
     background-color: #005991;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
     padding: 0.5rem;
     text-transform: uppercase;
     text-decoration: none;
@@ -51,5 +54,18 @@
     @media(min-width: 50em){
         width: 100%;
         padding: 1rem 0;
+        margin: 0;
+    }
+}
+
+.food-wrapper h2 {
+    @media(min-width: 50em){
+        font-size: 28px;
+    }
+}
+
+.food-wrapper p{ 
+    @media(min-width: 50em){
+        font-size: 16px;
     }
 }
