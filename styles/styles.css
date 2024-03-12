@@ -779,6 +779,14 @@ footer p {
   .bottom-nav {
     display: flex;
     flex-direction: row;
+    padding: 0 1rem;
+    background-color: #014e85;
+  }
+  .bottom-nav #menu-items {
+    background-color: unset;
+  }
+  .bottom-nav #menu-items ul {
+    margin: 0;
   }
   .bottom-nav .search-bar {
     position: unset;

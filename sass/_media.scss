@@ -71,6 +71,14 @@
     .bottom-nav {
         display: flex;
         flex-direction: row;
+        padding: 0 1rem;
+        background-color: #014e85;
+        #menu-items {
+            background-color: unset;
+            ul {
+                margin: 0;
+            }
+        }
         .search-bar {
             position: unset;
             top: unset;
