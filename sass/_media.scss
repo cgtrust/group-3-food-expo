@@ -18,28 +18,22 @@
             ul {
                 background-color: $navbg;
                 display: flex;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
                 margin: 0 1rem;
+                border-bottom: 0;
                 li {
                     border-top: none;
-                }
-            }
-        }
-
-        #socials {
-            display: none;
-
-            a {
-                margin: 0 0.5rem;
-                i {
-                    font-size: 1.5rem;
+                    a {
+                        padding: 1rem;
+                    }
                 }
             }
         }
 
         .search-bar {
             position: absolute;
+            height: 35px;
             top: 1.125rem;
             right: 0;
             max-width: 23%;;
@@ -49,20 +43,56 @@
             box-shadow: inset 0px 0px 15px 0px #939393;
         }
     }
+
+    #socials {
+        display: none;
+    }
 }
 
 @include mediaQuery(43.75rem) {
     .bottom-nav {
-        #socials {
-            display: inline-flex;
-            position: absolute;
-            top: 21px;
-            right: 0;
-            margin-right: 1rem;
-        }
 
         .search-bar {
             right: 10rem;
+        }
+    }
+
+    #socials {
+        display: inline-flex;
+        a {
+            margin: 0 0.5rem;
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@include mediaQuery(48.4375rem) {
+    .bottom-nav {
+        padding: 0 1rem;
+        background-color: #014e85;
+        #menu-items {
+            background-color: unset;
+            display: flex;
+            justify-content: center;
+            ul {
+                // justify-content: flex-end;
+                margin: 0;
+                li a {
+                    padding: 1rem 2rem;
+                }
+            }
+        }
+        .search-bar {
+            position: static;
+            top: unset;
+            right: unset;
+            order: 3;
+            height: 50.39px;;
+            margin-right: 0;
+            border-radius: 0;
+            // max-width: none;
         }
     }
 }
