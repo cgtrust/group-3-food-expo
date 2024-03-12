@@ -17,7 +17,6 @@ header {
     order: 3;
     a {
         position: relative;
-        // border: 2px solid red;
         width: 30px;
         height: 30px;
         overflow: hidden;
@@ -38,8 +37,6 @@ header {
         color: grey;
        } 
         &:hover {
-            // border: 5px solid green;
-
             i:first-child {
                 top: -50px;
                 
