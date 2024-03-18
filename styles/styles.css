@@ -819,6 +819,10 @@ footer p {
   }
 }
 @media screen and (min-width: 48.4375rem) {
+  .top-nav {
+    max-width: 1040px;
+    margin: 0 auto;
+  }
   .bottom-nav {
     display: flex;
     padding: 0 1rem;
