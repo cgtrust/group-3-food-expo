@@ -663,11 +663,7 @@ tbody tr:nth-child(odd) {
 }
 
 .food-wrapper h2 {
-<<<<<<< HEAD
-  color: #1A71A9;
-=======
   color: #1a71a9;
->>>>>>> header-footer
   text-transform: uppercase;
   font-weight: bold;
   font-size: 34px;
@@ -698,11 +694,7 @@ tbody tr:nth-child(odd) {
 .food-wrapper a {
   font-weight: bold;
   color: white;
-<<<<<<< HEAD
-  background-color: #1A71A9;
-=======
   background-color: #1a71a9;
->>>>>>> header-footer
   margin-right: 1rem;
   padding: 0.5rem;
   text-transform: uppercase;
@@ -828,11 +820,7 @@ footer p {
     font-size: 1.5rem;
   }
 }
-<<<<<<< HEAD
-@media screen and (min-width: 48.4375rem) {
-=======
 @media screen and (min-width: 48.4375em) {
->>>>>>> header-footer
   .top-nav {
     max-width: 1040px;
     margin: 0 auto;
