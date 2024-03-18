@@ -559,9 +559,21 @@ header {
     left: 0;
   }
 }
-@media screen and (min-width: 50.5em) {
+@media screen and (min-width: 50em) {
   .main-fig-wrapper {
     width: 100%;
+    margin-top: 0.5rem;
+  }
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .salad-pancake {
+    margin-top: 0;
+  }
+  .salad-pancake .caption {
+    bottom: 0;
   }
 }
 body {
