@@ -1,18 +1,18 @@
 @use 'vars' as*;
-
+@use 'mixin' as *;
 
 .food-wrapper {
     width: 95%;
     margin: 1rem auto;
-    padding: 1rem 0 2.5rem 0;
+    padding: 1rem 0 3rem 0;
     background-color: white;
 }
 
 .food-wrapper h2 {
-    color: #1A71A9;
+    color: $navcolor;
     text-transform: uppercase;
-    font-weight: normal;
-    font-size: 23px;
+    font-weight: bold;
+    font-size: 34px;
     margin-bottom: 0;
     margin: auto 1rem;
 }
@@ -20,24 +20,27 @@
 .food-wrapper img {
     width: 100%;
     padding: 0 1rem;
+    margin-top: 1rem;
 }
 
-.food-wrapper p{
+.food-wrapper p {
     font-weight: 400;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .post-info {
     margin-top: 0;
+    margin: 0 1rem 0 1rem;
+}
+
+.food-content {
+    margin: 0 1rem 1rem;
 }
 
 .food-wrapper a {
-    font-family: 'Roboto Condensed';
     font-weight: bold;
     color: white;
-    background-color: #1A71A9;
+    background-color: $navcolor;
     margin-right: 1rem;
     padding: 0.5rem;
     text-transform: uppercase;
@@ -45,22 +48,19 @@
     float: right;
 }
 
-.food-wrapper {
-    @media(min-width: 50em){
-        width: 100%;
-        padding: 1rem 0;
-        margin: 0;
+@include mediaQuery (50em) {
+    .food-wrapper {
+      width: 100%;
+      padding: 1rem 0;
+      margin: 0;
     }
-}
-
-.food-wrapper h2 {
-    @media(min-width: 50em){
-        font-size: 28px;
+  
+    .food-wrapper h2 {
+      font-size: 28px;
     }
-}
-
-.food-wrapper p{ 
-    @media(min-width: 50em){
-        font-size: 16px;
+  
+    .food-wrapper p {
+      font-size: 16px;
     }
-}
+  }
+  

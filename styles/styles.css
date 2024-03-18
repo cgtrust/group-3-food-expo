@@ -385,7 +385,7 @@ header {
 .top-nav {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 0.75rem;
   align-items: center;
   max-width: 65rem;
   margin: 0 auto;
@@ -394,6 +394,8 @@ header {
 #socials {
   display: flex;
   order: 3;
+  font-size: 1.5rem;
+  gap: 0.5rem;
 }
 #socials a {
   position: relative;
@@ -470,16 +472,18 @@ header {
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
+  height: 2rem;
 }
 .bottom-nav .search-bar #search-bar {
   border: unset;
   background: unset;
-  padding: 1rem;
+  padding: 0.5rem;
   width: 100%;
   outline: 0;
 }
 .bottom-nav .search-bar input::placeholder {
   font-weight: bold;
+  font-size: 14px;
 }
 .bottom-nav .search-bar #search-button {
   border: none;
@@ -489,8 +493,9 @@ header {
 }
 
 .showMenu {
-  height: 266px;
+  height: 268px;
   display: flex;
+  border-bottom: #18659e 1px solid;
 }
 
 .nav-button {
@@ -653,15 +658,19 @@ tbody tr:nth-child(odd) {
 .food-wrapper {
   width: 95%;
   margin: 1rem auto;
-  padding: 1rem 0 2.5rem 0;
+  padding: 1rem 0 3rem 0;
   background-color: white;
 }
 
 .food-wrapper h2 {
+<<<<<<< HEAD
   color: #1A71A9;
+=======
+  color: #1a71a9;
+>>>>>>> header-footer
   text-transform: uppercase;
-  font-weight: normal;
-  font-size: 23px;
+  font-weight: bold;
+  font-size: 34px;
   margin-bottom: 0;
   margin: auto 1rem;
 }
@@ -669,24 +678,31 @@ tbody tr:nth-child(odd) {
 .food-wrapper img {
   width: 100%;
   padding: 0 1rem;
+  margin-top: 1rem;
 }
 
 .food-wrapper p {
   font-weight: 400;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .post-info {
   margin-top: 0;
+  margin: 0 1rem 0 1rem;
+}
+
+.food-content {
+  margin: 0 1rem 1rem;
 }
 
 .food-wrapper a {
-  font-family: "Roboto Condensed";
   font-weight: bold;
   color: white;
+<<<<<<< HEAD
   background-color: #1A71A9;
+=======
+  background-color: #1a71a9;
+>>>>>>> header-footer
   margin-right: 1rem;
   padding: 0.5rem;
   text-transform: uppercase;
@@ -694,26 +710,19 @@ tbody tr:nth-child(odd) {
   float: right;
 }
 
-@media (min-width: 50em) {
+@media screen and (min-width: 50em) {
   .food-wrapper {
     width: 100%;
     padding: 1rem 0;
     margin: 0;
   }
-}
-
-@media (min-width: 50em) {
   .food-wrapper h2 {
     font-size: 28px;
   }
-}
-
-@media (min-width: 50em) {
   .food-wrapper p {
     font-size: 16px;
   }
 }
-
 .content-wrapper {
   margin: 0 0.5rem;
 }
@@ -759,7 +768,7 @@ footer p {
   font-size: 12px;
 }
 
-@media screen and (min-width: 31.25rem) {
+@media screen and (min-width: 31.25em) {
   .top-nav {
     padding: 1rem;
   }
@@ -786,9 +795,6 @@ footer p {
     border-top: none;
     flex: 1 1;
   }
-  .bottom-nav #menu-items ul li a {
-    padding: 1rem;
-  }
   .bottom-nav .search-bar {
     position: absolute;
     height: 35px;
@@ -803,13 +809,17 @@ footer p {
   #socials {
     display: none;
   }
+  #socials a i {
+    transition: none;
+  }
 }
-@media screen and (min-width: 43.75rem) {
+@media screen and (min-width: 43.75em) {
   .bottom-nav .search-bar {
     right: 10rem;
   }
   #socials {
     display: inline-flex;
+    gap: 0;
   }
   #socials a {
     margin: 0 0.5rem;
@@ -818,7 +828,11 @@ footer p {
     font-size: 1.5rem;
   }
 }
+<<<<<<< HEAD
 @media screen and (min-width: 48.4375rem) {
+=======
+@media screen and (min-width: 48.4375em) {
+>>>>>>> header-footer
   .top-nav {
     max-width: 1040px;
     margin: 0 auto;
@@ -833,19 +847,18 @@ footer p {
     display: flex;
     justify-content: center;
     max-width: 1040px;
+    height: fit-content;
   }
   .bottom-nav #menu-items ul {
     margin: 0;
-  }
-  .bottom-nav #menu-items ul li a {
-    padding: 1rem 2rem;
+    height: fit-content;
   }
   .bottom-nav .search-bar {
     position: static;
     top: unset;
     right: unset;
     order: 3;
-    height: 50.39px;
+    height: 38px;
     margin-right: 0;
     border-radius: 0;
   }
