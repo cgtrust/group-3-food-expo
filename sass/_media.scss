@@ -1,7 +1,7 @@
 @use 'vars' as *;
 @use 'mixin' as *;
 
-@include mediaQuery(31.25rem) {
+@include mediaQuery(31.25em) {
     .top-nav {
         padding: 1rem;
         .nav-button {
@@ -51,7 +51,7 @@
     }
 }
 
-@include mediaQuery(43.75rem) {
+@include mediaQuery(43.75em) {
     .bottom-nav {
         .search-bar {
             right: 10rem;
@@ -70,7 +70,7 @@
     }
 }
 
-@include mediaQuery(48.4375rem) {
+@include mediaQuery(48.4375em) {
     .top-nav {
         max-width: 1040px;
         margin: 0 auto;

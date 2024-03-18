@@ -656,16 +656,15 @@ tbody tr:nth-child(odd) {
 .food-wrapper {
   width: 95%;
   margin: 1rem auto;
-  padding: 1rem 0 2.5rem 0;
+  padding: 1rem 0 3rem 0;
   background-color: white;
 }
 
 .food-wrapper h2 {
-  font-family: "Roboto Condensed Regular";
-  color: #1A71A9;
+  color: #1a71a9;
   text-transform: uppercase;
-  font-weight: normal;
-  font-size: 23px;
+  font-weight: bold;
+  font-size: 34px;
   margin-bottom: 0;
   margin: auto 1rem;
 }
@@ -673,25 +672,27 @@ tbody tr:nth-child(odd) {
 .food-wrapper img {
   width: 100%;
   padding: 0 1rem;
+  margin-top: 1rem;
 }
 
 .food-wrapper p {
-  font-family: "Roboto Light";
   font-weight: 400;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .post-info {
   margin-top: 0;
+  margin: 0 1rem 0 1rem;
+}
+
+.food-content {
+  margin: 0 1rem 1rem;
 }
 
 .food-wrapper a {
-  font-family: "Roboto Condensed";
   font-weight: bold;
   color: white;
-  background-color: #005991;
+  background-color: #1a71a9;
   margin-right: 1rem;
   padding: 0.5rem;
   text-transform: uppercase;
@@ -699,26 +700,19 @@ tbody tr:nth-child(odd) {
   float: right;
 }
 
-@media (min-width: 50em) {
+@media screen and (min-width: 50em) {
   .food-wrapper {
     width: 100%;
     padding: 1rem 0;
     margin: 0;
   }
-}
-
-@media (min-width: 50em) {
   .food-wrapper h2 {
     font-size: 28px;
   }
-}
-
-@media (min-width: 50em) {
   .food-wrapper p {
     font-size: 16px;
   }
 }
-
 .content-wrapper {
   margin: 0 0.5rem;
 }
@@ -764,7 +758,7 @@ footer p {
   font-size: 12px;
 }
 
-@media screen and (min-width: 31.25rem) {
+@media screen and (min-width: 31.25em) {
   .top-nav {
     padding: 1rem;
   }
@@ -809,7 +803,7 @@ footer p {
     transition: none;
   }
 }
-@media screen and (min-width: 43.75rem) {
+@media screen and (min-width: 43.75em) {
   .bottom-nav .search-bar {
     right: 10rem;
   }
@@ -824,7 +818,7 @@ footer p {
     font-size: 1.5rem;
   }
 }
-@media screen and (min-width: 48.4375rem) {
+@media screen and (min-width: 48.4375em) {
   .top-nav {
     max-width: 1040px;
     margin: 0 auto;
