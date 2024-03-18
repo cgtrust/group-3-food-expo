@@ -26,9 +26,6 @@
                 li {
                     border-top: none;
                     flex: 1 1;
-                    a {
-                        padding: 1rem;
-                    }
                 }
             }
         }
@@ -48,6 +45,9 @@
 
     #socials {
         display: none;
+        a i {
+            transition: none;
+        }
     }
 }
 
@@ -60,6 +60,7 @@
 
     #socials {
         display: inline-flex;
+        gap: 0;
         a {
             margin: 0 0.5rem;
             i {
@@ -84,11 +85,10 @@
             display: flex;
             justify-content: center;
             max-width: 1040px;
+            height: fit-content;
             ul {
                 margin: 0;
-                li a {
-                    padding: 1rem 2rem;
-                }
+                height: fit-content;
             }
         }
         .search-bar {
@@ -96,7 +96,7 @@
             top: unset;
             right: unset;
             order: 3;
-            height: 50.39px;;
+            height: 38px;;
             margin-right: 0;
             border-radius: 0;
         }
