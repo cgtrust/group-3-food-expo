@@ -1,6 +1,9 @@
 .main-fig-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     width: 95%;
-    margin: .5rem auto 0 auto;
+    margin: 0.5rem auto 0;
 } 
 
 .image-container {
@@ -9,6 +12,7 @@
     width: 100%;
     height: 100%;
     img {
+        display: block;
         width: 100%;
         height: 240px;
     }
@@ -20,7 +24,7 @@
 
 .caption {
     position: absolute;
-    bottom: 4px;
+    bottom: 0;
     right: 0;
     left: 0;
     width: 100%;
@@ -41,34 +45,40 @@
         display: grid;
         grid-template-columns: 1fr 1fr; 
         grid-gap: 4px;
-        row-gap: 0;  
+        align-content: center;
+        // row-gap: 0;  
 
     .image-container:first-child {
         grid-column: span 2; 
+        max-height: 240px;
+    }
+
+    .salad-pancake {
+        max-height: 240px;
     }
 
     .caption{
-        bottom: 0.25rem;
-        left: 0;
+        bottom: 0;
+        // left: 0;
     }
 }}
 
 @media screen and (min-width: 50em) {
     .main-fig-wrapper{
+        max-height: 480px;
         width: 100%;
-        margin-top: 0.5rem;
     }
 
     .image-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: flex-end;
     }
 
     .salad-pancake {
-        margin-top: 0;
-        .caption {
-            bottom: 0;
-        }
+        // margin-top: 0;
+        // .caption {
+        //     bottom: 4px;
+        // }
     }
 }
