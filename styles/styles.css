@@ -710,6 +710,11 @@ tbody tr:nth-child(odd) {
   float: right;
 }
 
+.food-wrapper a:hover {
+  background-color: white;
+  color: #1a71a9;
+}
+
 @media screen and (min-width: 50em) {
   .food-wrapper {
     width: 100%;

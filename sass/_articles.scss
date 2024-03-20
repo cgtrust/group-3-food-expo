@@ -47,6 +47,10 @@
     text-decoration: none;
     float: right;
 }
+.food-wrapper a:hover{
+    background-color: white;
+    color: $navcolor;
+}
 
 @include mediaQuery (50em) {
     .food-wrapper {
