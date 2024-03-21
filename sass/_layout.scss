@@ -3,7 +3,7 @@
 
 .content-wrapper {
     margin: 0 .5rem;
-    @media (min-width: 50em) {
+    @media (min-width: 48.125em) {
         @include page-grid;
         max-width: 65rem;
         .main-fig-wrapper, .pasta-wrapper, .ramen-wrapper {
@@ -28,4 +28,4 @@
         height: auto;
         margin: 2rem;
     }
-}
+} 

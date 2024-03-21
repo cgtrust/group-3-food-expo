@@ -23,11 +23,9 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         max-width: 20rem;
-        @media (min-width: 48em) {
+        @media (min-width: 48.125em) {
             grid-template-columns: 1fr 1fr 1fr;
-            max-width: 34rem;
-        }
-        @media (min-width: 50em) {
+            width: 12.375rem;
             display: inline-block;
         }
     }

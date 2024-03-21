@@ -52,7 +52,7 @@
     color: $navcolor;
 }
 
-@include mediaQuery (50em) {
+@include mediaQuery (48.125em) {
     .food-wrapper {
       width: 100%;
       margin: 0;
