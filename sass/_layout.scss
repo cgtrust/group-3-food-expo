@@ -2,10 +2,10 @@
 @use 'mixin' as*;
 
 .content-wrapper {
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
     @media (min-width: 48.125em) {
         @include page-grid;
-        max-width: 65rem;
+        max-width: 63rem;
         .main-fig-wrapper, .pasta-wrapper, .ramen-wrapper {
             grid-column: 1/5;
         }
@@ -17,7 +17,7 @@
             grid-row: 1/3;
         }
     }
-    @media (min-width: 65.5em) {
+    @media (min-width: 65em) {
         margin: 0 auto;
     }
 }
