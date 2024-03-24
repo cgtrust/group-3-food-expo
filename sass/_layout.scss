@@ -2,7 +2,6 @@
 @use 'mixin' as*;
 
 .content-wrapper {
-    margin: 0 0.5rem;
     @media (min-width: 48.125em) {
         @include page-grid;
         max-width: 63rem;
@@ -16,9 +15,12 @@
             grid-column: 5/6;
             grid-row: 1/3;
         }
+        margin: 0 auto;
+        padding: 0 1rem;
     }
     @media (min-width: 65em) {
         margin: 0 auto;
+        padding: 0;
     }
 }
 

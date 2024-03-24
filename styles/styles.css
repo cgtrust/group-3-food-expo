@@ -614,7 +614,7 @@ body {
   list-style: none;
   padding: 0.25rem;
 }
-@media (min-width: 50em) {
+@media (min-width: 48.125em) {
   .sidebar {
     width: 12.5rem;
   }
@@ -723,9 +723,6 @@ tbody tr:nth-child(odd) {
     font-size: 16px;
   }
 }
-.content-wrapper {
-  margin: 0 0.5rem;
-}
 @media (min-width: 48.125em) {
   .content-wrapper {
     display: grid;
@@ -733,6 +730,8 @@ tbody tr:nth-child(odd) {
     grid-template-rows: auto;
     gap: 0.5rem;
     max-width: 63rem;
+    margin: 0 auto;
+    padding: 0 1rem;
   }
   .content-wrapper .main-fig-wrapper, .content-wrapper .pasta-wrapper, .content-wrapper .ramen-wrapper {
     grid-column: 1/5;
@@ -748,6 +747,7 @@ tbody tr:nth-child(odd) {
 @media (min-width: 65em) {
   .content-wrapper {
     margin: 0 auto;
+    padding: 0;
   }
 }
 
